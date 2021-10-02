@@ -16,4 +16,17 @@
         <maven.compiler.target>14</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <!--Web服务-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--服务的注册和发现(我们要讲服务注册到nacos)-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>
