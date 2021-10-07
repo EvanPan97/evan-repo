@@ -7,5 +7,5 @@ import org.springframework.web.bind.annotation.PathVariable;
 @FeignClient(name = "demo-provider")
 public interface RemoteProviderService {
     @GetMapping("/provider/echo/{Msg}")
-    public String echoMsg(@PathVariable("Msg") String str);
+    String echoMsg(@PathVariable("Msg") String str);
 }
